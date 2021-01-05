@@ -53,5 +53,5 @@ int main(void)
 	/* Memory Deallocation*/
 	free(input);
 
-	return EXIT_SUCCESS;
-}
+	return EXIT_SUCCESS; }
+\ No newline at end of file

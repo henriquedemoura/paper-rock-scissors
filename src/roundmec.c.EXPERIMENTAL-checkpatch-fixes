@@ -61,4 +61,3 @@ int announce_round_winner(int *gamer_choice, int *machine_choice)
 		printf("You lose.\n");
 		return -1;
 	}
-}

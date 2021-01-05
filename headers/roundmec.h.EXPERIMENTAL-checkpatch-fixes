@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-3.0 */
-/*
- * Copyright (C) 2020 Henrique de Moura Sinezio
- *
- * Author: Henrique de Moura Sinezio <henriquedemourasinezio@gmail.com>
- *
- * main.h:	macros and function prototypes
- *
- */
-
 #ifndef ROUNDMEC_H
 #define ROUNDMEC_H
 
@@ -19,7 +9,8 @@
 #define CLR_TMR 0
 
 #if CLR_TMR == 1
-	#define CLEAR_TERMINAL() printf("\e[1;1H\e[2J");
+	#define CLEAR_TERMINAL() \
+		printf("\e[1;1H\e[2J");
 #else
 	#define CLEAR_TERMINAL()
 #endif
@@ -37,3 +28,4 @@ void run_round_against_machine(int *gamer_choice, int *machine_choice, char **ch
 int announce_round_winner(int *gamer_choice, int *machine_choice);
 
 #endif
+\ No newline at end of file
